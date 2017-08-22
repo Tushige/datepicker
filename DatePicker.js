@@ -181,7 +181,7 @@ class DatePicker {
      */
     _getAvailableDaysInMonth(year, month) {
         let dateCopy = new Date(year, month, 1);
-        let days = []
+        let days = [];
         let i = 0;
         while (dateCopy.getMonth() === month) {
             let d = new Date(dateCopy);
@@ -266,6 +266,6 @@ class DatePicker {
      */
     _isCurrentDate(day) {
         const now = new Date();
-        return this.date.getFullYear() == now.getFullYear() && this.date.getMonth() == now.getMonth() && day === now.getDay();
+        return this.date.getFullYear() === now.getFullYear() && this.date.getMonth() === now.getMonth() && day === now.getDay();
     }
 }
