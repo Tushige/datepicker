@@ -1,0 +1,38 @@
+.calendar {
+    display:none;
+    color:white;
+    width:300px;
+    background-color: #3a1b44;
+}
+/*
+ * table containing days of month
+ */
+table {
+    margin: 0 auto;
+}
+/*
+ * selected date appears here
+ */
+input {
+    width:200px;
+}
+/**
+ * DatePicker header styles
+ */
+.datePicker-header {
+    display: flex;
+    justify-content: space-between;
+}
+.header-display-controller {
+    cursor: pointer;
+}
+/*
+ * a single day of month
+ */
+.calendar-day {
+    margin: 5px;
+    cursor: pointer;
+}
+.current-date {
+    background-color:#c99cd8;
+}
